@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+
+        android:backgroundTint="@color/cardview_shadow_end_color">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:adjustViewBounds="true"
+
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            >
+            <TextView
+                android:id="@+id/name_dog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Name"
+                ></TextView>
+
+            <ToggleButton
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+
+                android:textOn=""
+                android:textOff=""
+                android:layout_gravity="right"
+                android:background="@drawable/toggle_selector"
+
+                />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/description_dog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_margin="3dp"
+        android:backgroundTint="@color/white"
+
+        >
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:autoSizeMinTextSize="8dp"
+            android:autoSizeMaxTextSize="15dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/tv_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:autoSizeMinTextSize="8dp"
+            android:autoSizeMaxTextSize="15dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/tv_lifespan"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:autoSizeMinTextSize="8dp"
+            android:autoSizeMaxTextSize="15dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/tv_temperament"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:autoSizeMinTextSize="8dp"
+            android:autoSizeMaxTextSize="15dp"
+            ></TextView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
